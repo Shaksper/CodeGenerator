@@ -1,0 +1,15 @@
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\CodeGenarator.exe.config
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\CodeGenarator.exe
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\CodeGenarator.pdb
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.csprojAssemblyReference.cache
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.Form1.resources
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.Properties.Resources.resources
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.csproj.GenerateResource.cache
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.csproj.CoreCompileInputs.cache
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.exe
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.pdb
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\MySql.Data.dll
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\Google.Protobuf.dll
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\MySql.Data.xml
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\obj\Debug\CodeGenarator.csproj.CopyComplete
+C:\myworkfile\demos\CodeGenarator\CodeGenarator\bin\Debug\Template.txt

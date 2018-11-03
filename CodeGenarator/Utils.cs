@@ -14,7 +14,7 @@ namespace CodeGenarator
         {
             // 定义集合    
             IList<T> ts = new List<T>();
-
+            
             // 获得此模型的类型   
             Type type = typeof(T);
             string tempName = "";

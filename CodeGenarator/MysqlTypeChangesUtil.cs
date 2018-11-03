@@ -10,7 +10,7 @@ namespace CodeGenarator
     /// <summary>
     /// 
     /// </summary>
-    public class TypeChangesUtil
+    public class MysqlTypeChangesUtil: ITypeChangesUtil
     {
         /// <summary>
         /// 匹配模板并转换
@@ -27,18 +27,26 @@ namespace CodeGenarator
                 string propertys = "";
                 foreach (var item in list)
                 {
-                    switch (item.DATA_TYPE)
+                    switch (item.DATA_TYPE.ToLower())
                     {
+                        case "integer":
                         case "int":propertys += string.Format("public {0} {1} {{get;set;}}","int",item.COLUMN_NAME.ToUpper()); break;
+                        case "text":
+                        case "nvarchar":
+                        case "ntext":
+                        case "nchar":
                         case "varchar":propertys += string.Format("public {0} {1} {{get;set;}}","string",item.COLUMN_NAME.ToUpper()); break;
                         case "double":propertys += string.Format("public {0} {1} {{get;set;}}","double",item.COLUMN_NAME.ToUpper()); break;
                         case "float":propertys += string.Format("public {0} {1} {{get;set;}}","float",item.COLUMN_NAME.ToUpper()); break;
                         case "bit":propertys += string.Format("public {0} {1} {{get;set;}}","bool",item.COLUMN_NAME.ToUpper()); break;
                         case "datetime":propertys += string.Format("public {0} {1} {{get;set;}}", "DateTime", item.COLUMN_NAME.ToUpper()); break;
+                        case "numeric":
                         case "decimal":propertys += string.Format("public {0} {1} {{get;set;}}","decimal",item.COLUMN_NAME.ToUpper()); break;
                         case "date":propertys += string.Format("public {0} {1} {{get;set;}}","DateTime",item.COLUMN_NAME.ToUpper()); break;
-                        case "text":propertys += string.Format("public {0} {1} {{get;set;}}","string",item.COLUMN_NAME.ToUpper()); break;
                         case "char":propertys += string.Format("public {0} {1} {{get;set;}}","char",item.COLUMN_NAME.ToUpper()); break;
+                        case "smallint":propertys += string.Format("public {0} {1} {{get;set;}}","short",item.COLUMN_NAME.ToUpper()); break;
+                        case "bigint": propertys += string.Format("public {0} {1} {{get;set;}}", "long", item.COLUMN_NAME.ToUpper()); break;
+                        case "tinyint": propertys += string.Format("public {0} {1} {{get;set;}}", "byte", item.COLUMN_NAME.ToUpper()); break;
                         default:
                             break;
                     }

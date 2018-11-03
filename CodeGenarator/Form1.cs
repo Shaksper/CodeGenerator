@@ -96,7 +96,7 @@ namespace CodeGenarator
             lblstatus.Text = $"共有{tbnames.Count}张表。";
             reader.Close();
             int i = 0;
-            TypeChangesUtil typeChanges = new TypeChangesUtil();
+            MysqlTypeChangesUtil typeChanges = new MysqlTypeChangesUtil();
             foreach (var tbname in tbnames)
             {
                 lblstatus.Text = $"共有{tbnames.Count}张表。正在生成第{i++}张表。。。";

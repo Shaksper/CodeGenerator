@@ -60,6 +60,7 @@
             // 
             // cbdbtype
             // 
+            this.cbdbtype.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cbdbtype.FormattingEnabled = true;
             this.cbdbtype.Items.AddRange(new object[] {
             "MYSQL"});
@@ -106,6 +107,7 @@
             // 
             // txtip
             // 
+            this.txtip.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtip.Location = new System.Drawing.Point(162, 59);
             this.txtip.Name = "txtip";
             this.txtip.Size = new System.Drawing.Size(160, 21);
@@ -114,6 +116,7 @@
             // 
             // txtport
             // 
+            this.txtport.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtport.Location = new System.Drawing.Point(162, 89);
             this.txtport.Name = "txtport";
             this.txtport.Size = new System.Drawing.Size(160, 21);
@@ -122,6 +125,7 @@
             // 
             // txtuname
             // 
+            this.txtuname.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtuname.Location = new System.Drawing.Point(162, 117);
             this.txtuname.Name = "txtuname";
             this.txtuname.Size = new System.Drawing.Size(160, 21);
@@ -130,6 +134,7 @@
             // 
             // txtpwd
             // 
+            this.txtpwd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtpwd.Location = new System.Drawing.Point(162, 144);
             this.txtpwd.Name = "txtpwd";
             this.txtpwd.PasswordChar = '*';
@@ -159,6 +164,7 @@
             // 
             // cbdb
             // 
+            this.cbdb.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.cbdb.FormattingEnabled = true;
             this.cbdb.Location = new System.Drawing.Point(162, 171);
             this.cbdb.Name = "cbdb";
@@ -196,6 +202,7 @@
             // 
             // txtnamespace
             // 
+            this.txtnamespace.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtnamespace.Location = new System.Drawing.Point(201, 205);
             this.txtnamespace.Name = "txtnamespace";
             this.txtnamespace.Size = new System.Drawing.Size(121, 21);
@@ -217,7 +224,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(393, 320);
-            this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtnamespace);
             this.Controls.Add(this.lblnamespace);

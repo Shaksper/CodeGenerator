@@ -20,7 +20,6 @@ C:\myworkfile\demos\CodeGenerator\CodeGenarator\bin\Debug\CodeGenarator.pdb
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\bin\Debug\MySql.Data.dll
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\bin\Debug\Google.Protobuf.dll
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\bin\Debug\MySql.Data.xml
-C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.csprojAssemblyReference.cache
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.Form1.resources
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.Properties.Resources.resources
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.csproj.GenerateResource.cache
@@ -28,3 +27,11 @@ C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.csproj.C
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.csproj.CopyComplete
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.exe
 C:\myworkfile\demos\CodeGenerator\CodeGenarator\obj\Debug\CodeGenarator.pdb
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\NPOI.dll
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\NPOI.OOXML.dll
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\NPOI.OpenXml4Net.dll
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\myworkfile\demos\codegenerator\CodeGenarator\obj\Debug\CodeGenarator.csproj.ResolveComReference.cache
+C:\myworkfile\demos\codegenerator\CodeGenarator\bin\Debug\DataPie.dll

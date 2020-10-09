@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGenarator", "CodeGenarator\CodeGenarator.csproj", "{B22C5680-DAC3-41FE-BE9A-0210A708A57C}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CodeExport", "CodeExport\CodeExport.vdproj", "{7E775076-E60C-47EC-B6F1-5BFF46EB2F0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B22C5680-DAC3-41FE-BE9A-0210A708A57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B22C5680-DAC3-41FE-BE9A-0210A708A57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B22C5680-DAC3-41FE-BE9A-0210A708A57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E775076-E60C-47EC-B6F1-5BFF46EB2F0B}.Debug|Any CPU.ActiveCfg = Debug
+		{7E775076-E60C-47EC-B6F1-5BFF46EB2F0B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

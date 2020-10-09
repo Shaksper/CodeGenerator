@@ -46,28 +46,38 @@
             this.lblnamespace = new System.Windows.Forms.Label();
             this.txtnamespace = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnGetTables = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.tableListBox = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(79, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 12);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 99;
             this.label1.Text = "数据库类型：";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cbdbtype
             // 
-            this.cbdbtype.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cbdbtype.BackColor = System.Drawing.Color.Teal;
+            this.cbdbtype.Enabled = false;
+            this.cbdbtype.ForeColor = System.Drawing.Color.White;
             this.cbdbtype.FormattingEnabled = true;
             this.cbdbtype.Items.AddRange(new object[] {
-            "MYSQL"});
+            "MYSQL",
+            "SQLSERVER",
+            "ORACLE",
+            "SQLITE"});
             this.cbdbtype.Location = new System.Drawing.Point(162, 29);
             this.cbdbtype.Name = "cbdbtype";
             this.cbdbtype.Size = new System.Drawing.Size(160, 20);
             this.cbdbtype.TabIndex = 1;
+            this.cbdbtype.Text = "请选择数据库类型";
             // 
             // lblip
             // 
@@ -107,7 +117,8 @@
             // 
             // txtip
             // 
-            this.txtip.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtip.BackColor = System.Drawing.Color.Teal;
+            this.txtip.ForeColor = System.Drawing.Color.White;
             this.txtip.Location = new System.Drawing.Point(162, 59);
             this.txtip.Name = "txtip";
             this.txtip.Size = new System.Drawing.Size(160, 21);
@@ -116,7 +127,8 @@
             // 
             // txtport
             // 
-            this.txtport.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtport.BackColor = System.Drawing.Color.Teal;
+            this.txtport.ForeColor = System.Drawing.Color.White;
             this.txtport.Location = new System.Drawing.Point(162, 89);
             this.txtport.Name = "txtport";
             this.txtport.Size = new System.Drawing.Size(160, 21);
@@ -125,16 +137,18 @@
             // 
             // txtuname
             // 
-            this.txtuname.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtuname.BackColor = System.Drawing.Color.Teal;
+            this.txtuname.ForeColor = System.Drawing.Color.White;
             this.txtuname.Location = new System.Drawing.Point(162, 117);
             this.txtuname.Name = "txtuname";
             this.txtuname.Size = new System.Drawing.Size(160, 21);
             this.txtuname.TabIndex = 8;
-            this.txtuname.Text = "root";
+            this.txtuname.Text = "zs";
             // 
             // txtpwd
             // 
-            this.txtpwd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtpwd.BackColor = System.Drawing.Color.Teal;
+            this.txtpwd.ForeColor = System.Drawing.Color.White;
             this.txtpwd.Location = new System.Drawing.Point(162, 144);
             this.txtpwd.Name = "txtpwd";
             this.txtpwd.PasswordChar = '*';
@@ -144,12 +158,14 @@
             // 
             // btnconnect
             // 
-            this.btnconnect.BackColor = System.Drawing.Color.Lime;
+            this.btnconnect.BackColor = System.Drawing.Color.Teal;
+            this.btnconnect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnconnect.ForeColor = System.Drawing.Color.White;
             this.btnconnect.Location = new System.Drawing.Point(81, 236);
             this.btnconnect.Name = "btnconnect";
             this.btnconnect.Size = new System.Drawing.Size(84, 31);
             this.btnconnect.TabIndex = 10;
-            this.btnconnect.Text = "测试连接";
+            this.btnconnect.Text = "测试|连接";
             this.btnconnect.UseVisualStyleBackColor = false;
             this.btnconnect.Click += new System.EventHandler(this.btnconnect_Click);
             // 
@@ -164,7 +180,8 @@
             // 
             // cbdb
             // 
-            this.cbdb.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cbdb.BackColor = System.Drawing.Color.Teal;
+            this.cbdb.ForeColor = System.Drawing.Color.White;
             this.cbdb.FormattingEnabled = true;
             this.cbdb.Location = new System.Drawing.Point(162, 171);
             this.cbdb.Name = "cbdb";
@@ -173,7 +190,9 @@
             // 
             // btngene
             // 
-            this.btngene.BackColor = System.Drawing.Color.Lime;
+            this.btngene.BackColor = System.Drawing.Color.Teal;
+            this.btngene.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btngene.ForeColor = System.Drawing.Color.White;
             this.btngene.Location = new System.Drawing.Point(238, 236);
             this.btngene.Name = "btngene";
             this.btngene.Size = new System.Drawing.Size(84, 31);
@@ -186,7 +205,7 @@
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Location = new System.Drawing.Point(156, 277);
+            this.lblstatus.Location = new System.Drawing.Point(253, 270);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(0, 12);
             this.lblstatus.TabIndex = 14;
@@ -199,31 +218,73 @@
             this.lblnamespace.Size = new System.Drawing.Size(113, 12);
             this.lblnamespace.TabIndex = 15;
             this.lblnamespace.Text = "输入命名空间名称：";
+            this.lblnamespace.Visible = false;
             // 
             // txtnamespace
             // 
-            this.txtnamespace.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtnamespace.BackColor = System.Drawing.Color.Teal;
+            this.txtnamespace.ForeColor = System.Drawing.Color.White;
             this.txtnamespace.Location = new System.Drawing.Point(201, 205);
             this.txtnamespace.Name = "txtnamespace";
             this.txtnamespace.Size = new System.Drawing.Size(121, 21);
             this.txtnamespace.TabIndex = 16;
             this.txtnamespace.Text = "CodeGenarator";
+            this.txtnamespace.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 299);
+            this.label3.Location = new System.Drawing.Point(236, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(191, 12);
             this.label3.TabIndex = 17;
             this.label3.Text = "Code by shaksper in 1 Nov 2018.";
             // 
+            // btnGetTables
+            // 
+            this.btnGetTables.BackColor = System.Drawing.Color.Teal;
+            this.btnGetTables.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGetTables.ForeColor = System.Drawing.Color.White;
+            this.btnGetTables.Location = new System.Drawing.Point(368, 24);
+            this.btnGetTables.Name = "btnGetTables";
+            this.btnGetTables.Size = new System.Drawing.Size(242, 31);
+            this.btnGetTables.TabIndex = 18;
+            this.btnGetTables.Text = "获取数据库表";
+            this.btnGetTables.UseVisualStyleBackColor = false;
+            this.btnGetTables.Click += new System.EventHandler(this.btnGetTables_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.Teal;
+            this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(368, 236);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(242, 31);
+            this.btnExport.TabIndex = 19;
+            this.btnExport.Text = "导出所选表数据";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            // 
+            // tableListBox
+            // 
+            this.tableListBox.BackColor = System.Drawing.Color.Teal;
+            this.tableListBox.ForeColor = System.Drawing.Color.White;
+            this.tableListBox.FormattingEnabled = true;
+            this.tableListBox.Location = new System.Drawing.Point(368, 65);
+            this.tableListBox.Name = "tableListBox";
+            this.tableListBox.Size = new System.Drawing.Size(242, 164);
+            this.tableListBox.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(393, 320);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(633, 324);
+            this.Controls.Add(this.tableListBox);
+            this.Controls.Add(this.btnExport);
+            this.Controls.Add(this.btnGetTables);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtnamespace);
             this.Controls.Add(this.lblnamespace);
@@ -247,9 +308,9 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CodeGenarator";
+            this.Text = "CodeGenarator&Export";
             this.TopMost = true;
-            this.TransparencyKey = System.Drawing.Color.White;
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,6 +337,9 @@
         private System.Windows.Forms.Label lblnamespace;
         private System.Windows.Forms.TextBox txtnamespace;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnGetTables;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.CheckedListBox tableListBox;
     }
 }
 

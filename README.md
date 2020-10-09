@@ -15,8 +15,8 @@ This project V1.0 is used to automatically generate model classes in CSharp from
 
 5、另：水平有限，不吝赐教。
 
-2020-10-09
-新增数据表导出功能
+####2020-10-09    
+新增数据表导出功能,基于.netframework4.6.1
 
 
 ###软件截图

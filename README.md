@@ -14,3 +14,7 @@ This project V1.0 is used to automatically generate model classes in CSharp from
 4、注意：时间匆忙，没来得及进行导出数据的格式化，请谅解。
 
 5、另：水平有限，不吝赐教。
+
+
+###软件截图
+![image](https://github.com/Shaksper/CodeGenerator/blob/master/images/index.png)
